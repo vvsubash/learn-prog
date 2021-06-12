@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Users\Venkat\scoop\apps\nvm\current\nodejs\nodejs\node.exe C:\Users\Venkat\scoop\apps\yarn\current\Yarn\bin\yarn.js init -t
+
+PATH: 
+  C:\Program Files\PowerShell\7;C:\Python39\Scripts\;C:\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\PowerShell\7\;C:\Program Files\dotnet\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Users\Venkat\.deno\bin;C:\Program Files\Microsoft\Azure Functions Core Tools\;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\Venkat\scoop\apps\rustup\current\.cargo\bin;C:\Users\Venkat\scoop\apps\oh-my-posh\current\bin;C:\Users\Venkat\go\bin;C:\Users\Venkat\scoop\apps\nvm\current\nodejs\nodejs;C:\Users\Venkat\.amplify\bin;C:\Users\Venkat\.pulumi\bin;C:\Users\Venkat\scoop\apps\yarn\current\global\node_modules\.bin;C:\Users\Venkat\scoop\apps\yarn\current\Yarn\bin;C:\Users\Venkat\scoop\shims;C:\Users\Venkat\AppData\Local\Microsoft\WindowsApps;C:\Users\Venkat\AppData\Local\GitHubDesktop\bin;C:\Users\Venkat\.dotnet\tools;C:\Program Files\JetBrains\WebStorm 2020.3.2\bin;C:\Users\Venkat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Venkat\AppData\Local\Microsoft\WindowsApps;C:\Users\Venkat\.dotnet\tools
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.0.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Users\Venkat\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:137009:13)
+      at Interface.emit (events.js:315:20)
+      at Interface._ttyWrite (readline.js:873:16)
+      at ReadStream.onkeypress (readline.js:213:10)
+      at ReadStream.emit (events.js:315:20)
+      at emitKeys (internal/readline/utils.js:335:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1140:36)
+      at ReadStream.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:296:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
