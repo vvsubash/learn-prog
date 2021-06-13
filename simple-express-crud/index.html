@@ -4,25 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="./fe.js"></script> -->
-    <script>
-      console.log("kk");
-      const getData = async () => {
-        const response = await fetch("http://localhost:3000/api/tasks", {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json; charset=utf-8",
-          },
-        });
-        const tasks = await response.json();
-        const ul = document.getElementById("tasks");
-        tasks.map(
-          (x) =>
-            (ul.appendChild(document.createElement("LI")).innerHTML = x.name)
-        );
-        console.log(tasks);
-      };
-    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
     <link rel="shortcut icon" href="#" />
     <title>Simple Vanilla Form</title>
   </head>
@@ -39,4 +25,21 @@
     </div>
     <ul id="tasks"></ul>
   </body>
+  <script>
+    console.log("kk");
+    const getData = async () => {
+      const response = await fetch("http://localhost:3000/api/tasks", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json; charset=utf-8",
+        },
+      });
+      const tasks = await response.json();
+      const ul = document.getElementById("tasks");
+      tasks.map((x) => {
+        ul.appendChild(document.createElement("LI")).innerHTML = x.name;
+      });
+      // console.log(tasks);
+    };
+  </script>
 </html>
