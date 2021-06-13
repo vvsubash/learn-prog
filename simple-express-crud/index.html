@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="./fe.js"></script> -->
+    <script>
+      console.log("kk");
+      const getData = async () => {
+        const response = await fetch("http://localhost:3000/api/tasks", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json; charset=utf-8",
+          },
+        });
+        const tasks = await response.json();
+        const ul = document.getElementById("tasks");
+        tasks.map(
+          (x) =>
+            (ul.appendChild(document.createElement("LI")).innerHTML = x.name)
+        );
+        console.log(tasks);
+      };
+    </script>
+    <link rel="shortcut icon" href="#" />
+    <title>Simple Vanilla Form</title>
+  </head>
+  <body>
+    <form action="http://localhost:3000/api" method="POST">
+      <fieldset>
+        <label for="name">name</label>
+        <input type="text" name="name" id="name" />
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+    <div>
+      <input type="button" value="Get names" onclick="getData()" />
+    </div>
+    <ul id="tasks"></ul>
+  </body>
+</html>
